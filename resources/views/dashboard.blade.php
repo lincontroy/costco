@@ -79,7 +79,7 @@
             <div class="small-box bg-success">
                 <div class="inner">
                     <h5>ETB {{ $totalCommissions }}</h5>
-                    <p>Total totalCommissions</p>
+                    <p>Total Commissions</p>
                 </div>
                 <div class="icon">
                     <i class="fas fa-list-alt"></i>

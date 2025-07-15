@@ -206,9 +206,9 @@ class ProfileController extends Controller
         $packages = collect([
             ['name' => 'Level 1', 'price' => 2500, 'product_value' => 800000],
             ['name' => 'Level 2', 'price' => 5500, 'product_value' => 1200000],
-            ['name' => 'Level 3', 'price' => 8500, 'product_value' => 1600000],
-            ['name' => 'Level 4', 'price' => 12000, 'product_value' => 2000000],
-            ['name' => 'Level 5', 'price' => 24000, 'product_value' => 2500000],
+            ['name' => 'Level 3', 'price' => 11900, 'product_value' => 1600000],
+            ['name' => 'Level 4', 'price' => 24000, 'product_value' => 2000000],
+            ['name' => 'Level 5', 'price' => 39000, 'product_value' => 2500000],
         ]);
         
         $package = $packages->firstWhere('name', $name);

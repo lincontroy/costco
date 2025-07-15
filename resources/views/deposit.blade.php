@@ -13,7 +13,7 @@
                             <i class="fas fa-wallet me-2"></i>
                             My Deposits
                         </h4>
-                        <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#depositModal">
+                        <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#contactAdminModal">
                             <i class="fas fa-plus me-2"></i>
                             Make Deposit
                         </button>
@@ -345,98 +345,41 @@
     </div>
 </div>
 
-<!-- Make Deposit Modal -->
-<div class="modal fade" id="depositModal" tabindex="-1" aria-labelledby="depositModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<!-- Contact Admin for Deposit Modal -->
+<div class="modal fade" id="contactAdminModal" tabindex="-1" aria-labelledby="contactAdminModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="depositModalLabel">Make New Deposit</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="contactAdminModalLabel">
+                    <i class="fas fa-headset me-2"></i>Contact Admin for Deposit
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form action="{{ route('admin.wallet.deposit') }}" method="POST" enctype="multipart/form-data">
-                @csrf
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="amount" class="form-label">Amount <span class="text-danger">*</span></label>
-                        <div class="input-group">
-                            <span class="input-group-text">ETB</span>
-                            <input type="number" 
-                                   class="form-control @error('amount') is-invalid @enderror" 
-                                   id="amount" 
-                                   name="amount" 
-                                   step="0.01" 
-                                   min="1" 
-                                   value="{{ old('amount') }}"
-                                   required>
-                        </div>
-                        @error('amount')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="payment_method" class="form-label">Payment Method <span class="text-danger">*</span></label>
-                        <select class="form-select @error('payment_method') is-invalid @enderror" 
-                                id="payment_method" 
-                                name="payment_method" 
-                                required>
-                            <option value="">Select Payment Method</option>
-                            <option value="bank_transfer" {{ old('payment_method') == 'bank_transfer' ? 'selected' : '' }}>Bank Transfer</option>
-                            <option value="mobile_money" {{ old('payment_method') == 'mobile_money' ? 'selected' : '' }}>Mobile Money</option>
-                            <option value="cash" {{ old('payment_method') == 'cash' ? 'selected' : '' }}>Cash</option>
-                            <option value="chapa" {{ old('payment_method') == 'chapa' ? 'selected' : '' }}>Chapa</option>
-                        </select>
-                        @error('payment_method')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="reference_number" class="form-label">Reference Number <span class="text-danger">*</span></label>
-                        <input type="text" 
-                               class="form-control @error('reference_number') is-invalid @enderror" 
-                               id="reference_number" 
-                               name="reference_number" 
-                               placeholder="Enter transaction reference number"
-                               value="{{ old('reference_number') }}"
-                               required>
-                        @error('reference_number')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="notes" class="form-label">Notes (Optional)</label>
-                        <textarea class="form-control @error('notes') is-invalid @enderror" 
-                                  id="notes" 
-                                  name="notes" 
-                                  rows="3" 
-                                  placeholder="Any additional information...">{{ old('notes') }}</textarea>
-                        @error('notes')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="proof" class="form-label">Proof of Payment (Optional)</label>
-                        <input type="file" 
-                               class="form-control @error('proof') is-invalid @enderror" 
-                               id="proof" 
-                               name="proof" 
-                               accept="image/*,.pdf">
-                        <div class="form-text">Upload receipt or proof of payment (Image or PDF, max 5MB)</div>
-                        @error('proof')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
+            <div class="modal-body text-center py-5">
+                <div class="mb-4">
+                    <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                        <i class="fas fa-wallet text-primary" style="font-size: 2.5rem;"></i>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-success">
-                        <i class="fas fa-paper-plane me-1"></i>Submit Deposit
-                    </button>
+                
+                <h4 class="mb-3">Need to Make a Deposit?</h4>
+                <p class="text-muted mb-4">
+                    Contact our admin team to process your deposit request. We'll guide you through the payment process and credit your account promptly.
+                </p>
+
+                <div class="alert alert-info border-0 mb-4">
+                    <i class="fas fa-info-circle me-2"></i>
+                    <strong>Payment Methods Available:</strong> Bank Transfer, Mobile Money, Cash, Chapa
                 </div>
-            </form>
+            </div>
+            <div class="modal-footer justify-content-center border-0">
+                <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">
+                    <i class="fas fa-times me-1"></i>Close
+                </button>
+                <button type="button" class="btn btn-success px-4">
+                    <i class="fas fa-headset me-1"></i>Contact Admin
+                </button>
+            </div>
         </div>
     </div>
 </div>
