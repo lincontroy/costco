@@ -546,8 +546,8 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>About Costco Work Wave Investments</h2>
-                    <p>At Costco Work Wave Investments, we're passionate about transforming brands through strategic advertising. With over a decade of experience, we've helped hundreds of businesses achieve their marketing goals.</p>
+                    <h2>About Costco Work Wave s</h2>
+                    <p>At Costco Work Wave s, we're passionate about transforming brands through strategic advertising. With over a decade of experience, we've helped hundreds of businesses achieve their marketing goals.</p>
                     <p>Our team of creative professionals and data-driven strategists work together to deliver campaigns that not only look great but also perform exceptionally well in today's competitive market.</p>
                     <p>We believe in building long-term partnerships with our clients, understanding their unique challenges, and creating tailored solutions that drive measurable results.</p>
                 </div>
