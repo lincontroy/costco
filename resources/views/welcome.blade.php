@@ -511,7 +511,7 @@
     <div class="container">
         <div class="header-inner">
             <a href="#home" class="logo">
-                <img src="logo.png" alt="costcoworkwave" style="height:50px;">
+                <img src="logo.png" alt="Costco Work Wave" style="height:50px;">
             </a>
             <nav>
                 <ul class="nav">
@@ -532,7 +532,7 @@
         <div class="container">
             <div class="hero-content animate-fade-in">
                 <h1>Strategic Advertising Solutions</h1>
-                <p>Elevate your brand with Costcoworkwave' innovative advertising strategies. We create compelling campaigns that drive results and maximize your ROI.</p>
+                <p>Elevate your brand with Costco Work Wave' innovative advertising strategies. We create compelling campaigns that drive results and maximize your ROI.</p>
                 <div class="cta-buttons">
                     <a href="#about" class="btn btn-primary">Learn More</a>
                     <a href="/register" class="btn btn-secondary">Get Started</a>
@@ -546,8 +546,8 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>About CostCoworkWave Investments</h2>
-                    <p>At Costcoworkwave Investments, we're passionate about transforming brands through strategic advertising. With over a decade of experience, we've helped hundreds of businesses achieve their marketing goals.</p>
+                    <h2>About Costco Work Wave Investments</h2>
+                    <p>At Costco Work Wave Investments, we're passionate about transforming brands through strategic advertising. With over a decade of experience, we've helped hundreds of businesses achieve their marketing goals.</p>
                     <p>Our team of creative professionals and data-driven strategists work together to deliver campaigns that not only look great but also perform exceptionally well in today's competitive market.</p>
                     <p>We believe in building long-term partnerships with our clients, understanding their unique challenges, and creating tailored solutions that drive measurable results.</p>
                 </div>
@@ -586,7 +586,7 @@
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>What services does costcoworkwave offer?</span>
+                        <span>What services does Costco Work Wave offer?</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
@@ -643,7 +643,7 @@
                         <div class="contact-icon">📧</div>
                         <div>
                             <h3>Email</h3>
-                            <p>info@costcoworkwave.store</p>
+                            <p>info@Costco Work Wave.store</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -696,7 +696,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <p>&copy; 2025 costcoworkwave. All rights reserved.</p>
+                    <p>&copy; 2025 Costco Work Wave. All rights reserved.</p>
                 </div>
                 <div class="social-links">
                     <a href="#" title="Facebook">📘</a>
